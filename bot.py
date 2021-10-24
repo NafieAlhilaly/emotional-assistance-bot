@@ -21,7 +21,7 @@ def hi(message):
     bot.send_message(message.chat.id, "Hey")
 
 
-@bot.message_handler(commands=["Quote", "Random Quotes", "quotes", "random quotes", "quote", "Quotes"])
+@bot.message_handler(commands=["quote"])
 def quotes(message):
     bot.send_message(message.chat.id, "Ok, finding the best quote for you 😉 ...")
     bot.send_message(message.chat.id, rq.get_random_quote())
