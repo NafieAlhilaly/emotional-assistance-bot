@@ -1,10 +1,8 @@
 import os
 import telebot
-from dotenv import load_dotenv
 from quotes import RandomQuotes
 from gifs import RandomGifs
 
-load_dotenv()
 API_KEY = os.getenv('API_KEY')
 
 bot = telebot.TeleBot(API_KEY)
