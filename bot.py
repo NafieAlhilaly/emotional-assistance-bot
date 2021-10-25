@@ -35,4 +35,4 @@ def quotes(message):
     bot.send_message(message.chat.id, rg.get_random_hug_gif())
 
 
-bot.polling()
+bot.infinity_polling(timeout=10, long_polling_timeout=5)
