@@ -9,7 +9,6 @@ import random
 
 class RandomGifs:
     def __init__(self):
-        load_dotenv()
         self._API_KEY = os.getenv('TENOR_API_KEY')
 
     def get_api_key(self):
