@@ -1,4 +1,4 @@
 # emotional-assistance-bot
 A telegram bot written with Python using pyTelegramBotAPI
 
-Not deployed yet 😁
+[🤖](http://t.me/nafie_alhelaly_bot)
