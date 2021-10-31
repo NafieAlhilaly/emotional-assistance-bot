@@ -1,4 +1,5 @@
 import os
+from time import sleep
 import telebot
 # from dotenv import load_dotenv
 from quotes import RandomQuotes
@@ -34,5 +35,9 @@ def quotes(message):
     bot.send_message(message.chat.id, "Ok, come closer 🤗")
     bot.send_message(message.chat.id, rg.get_random_hug_gif())
 
-
-bot.infinity_polling(timeout=10, long_polling_timeout=5)
+while True:
+    try:
+        bot.polling(non_stop=True)
+    except Exception as e:
+        print(e)
+        sleep(10)
