@@ -35,6 +35,10 @@ def quotes(message):
     bot.send_message(message.chat.id, "Ok, come closer 🤗")
     bot.send_message(message.chat.id, rg.get_random_hug_gif())
 
+@bot.message_handler(commands=["link"])
+def get_bot_link(message):
+    bot.send_message(message.chat.id, "t.me/nafie_alhelaly_bot")
+
 while True:
     try:
         bot.polling(non_stop=True)
